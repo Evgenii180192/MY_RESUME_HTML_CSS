@@ -1,0 +1,264 @@
+/* Reset default styles */
+body {  
+    margin: 0; 
+    box-sizing: border-box;  
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+ul , ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {    
+    text-decoration: none;    
+}
+
+/* Container */
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {        
+    padding: 25px;        
+}
+
+.header::after {
+    content: "";
+    display: block;        
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(45deg, white,gray, black, white);
+}
+
+.header-list-navigation {
+    display: flex;      
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+
+.list-link-navigation {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding: 10px 30px 10px 30px;       
+}
+
+.list-link-navigation:hover {
+    background-color: rgb(243, 8, 8);   
+    border-radius: 10px;    
+}
+
+.link {
+    font-weight: 900;
+    color: #000;
+}
+
+/* Section Contacts */
+.my-info {
+    display: flex;      
+    justify-content: space-between;
+    padding: 40px 10px 55px 10px;
+}
+
+.my-info-photo {
+    padding-right: 70px; 
+}
+
+.photo {
+    width: 400px;
+    height: 400px;
+    padding: 5px;
+    border: 4px solid gray;
+    border-radius: 500px;    
+}
+
+.my-info-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80px;
+    color: #000; 
+    line-height: 1.4;
+    padding: 30px 5px 30px 5px; 
+    text-transform: uppercase; 
+}
+
+.span {
+    display: block;
+    text-align: center;        
+    background-image: linear-gradient(23deg, white,gray, white);
+    box-shadow: 5px 5px 5px rgb(2, 10, 63);
+    color: rgb(79, 3, 3);
+    
+}
+
+.my-contacts {   
+    padding-bottom: 55px;
+}
+
+.list-contacts {
+    display: flex;
+    justify-content: space-between;         
+}
+
+.link-contacts {
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    font-style: italic;
+    color: black;    
+    padding: 10px 15px;        
+    text-align: center;
+    background: rgba(247, 242, 242, 100);    
+    box-shadow: 5px 5px 5px black; 
+    border-radius: 10px;
+}
+
+.link-contacts:hover {  
+    background-color: rgb(243, 8, 8);
+}
+
+.link-contacts:active {
+    position: relative;
+    top: 5px;
+    left: 5px;       
+    box-shadow: none;
+}
+
+
+/* Section About Me */
+.section-about-me {
+    padding: 100px 5px 70px 5px;
+}
+
+.about-me {    
+    padding: 55px;    
+    box-shadow: inset rgba(0,0,0,.6) 0 -2px 8px, inset rgba(252,255,255,.7) 0 2px 8px, rgba(0,0,0,.8) 0 2px 8px -8px;
+}
+
+.about-me-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;    
+    font-style: italic;    
+    color: rgb(44, 37, 135);
+    text-align: center; 
+    letter-spacing: 2px;
+    text-transform: uppercase;          
+}
+
+.about-me-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;    
+    font-style: italic;
+    line-height: 1.8;
+    text-indent: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* Section Education */
+.section-education {
+    padding: 40px 5px 100px 5px;
+    
+}
+
+.education {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px 60px 20px;
+    position: relative;
+    box-shadow: inset rgba(0,0,0,.6) 0 -2px 8px, inset rgba(252,255,255,.7) 0 2px 8px, rgba(0,0,0,.8) 0 2px 8px -8px;
+}
+
+.section-education-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;    
+    font-style: italic;    
+    color: rgb(44, 37, 135); 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+.list-education {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;    
+    font-style: italic;
+    line-height: 1.8;
+    margin-top: 30px;
+}
+
+.education-certificate {
+    width: 500px;
+    height: 400px;
+}
+
+
+/* Section Skills */
+.section-skills {
+    padding: 100px 5px 150px 5px;
+}
+.skills {
+    display: flex;    
+    border: 5px solid black;
+    padding: 15px;
+    margin-bottom: 100px;
+}
+
+.skills-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;    
+    font-style: italic;    
+    color: rgb(44, 37, 135);
+    text-align: center; 
+    letter-spacing: 2px;
+    text-transform: uppercase;    
+}
+
+.skills-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;    
+    font-style: italic;
+    line-height: 1.8;
+    text-indent: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.hard-skills {
+    padding: 20px 10px 20px 10px;
+    border: 1px solid black;
+    margin-right: 20px;
+    width: 50%;
+}
+
+.soft-skills {
+    padding: 20px 10px 20px 10px;
+    border: 1px solid black;
+    width: 50%;
+}
+
+
+/* Footer */
+.footer {   
+    padding: 30px 0 30px 0; 
+    background: rgb(2, 10, 63);
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;    
+    color: #fff;    
+}
